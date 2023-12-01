@@ -1,22 +1,47 @@
-
-
 @media (max-width:1200px) {}
 
 @media (max-width: 992px) {
- 
-    .nav__text{
+
+    .nav__text {
         font-size: 4rem;
     }
-    .menu__item{
+
+    .menu__item {
         margin-left: 3rem;
     }
 }
 
 @media screen and (max-width:768px) {
-    .menu{
-        display: none;
+    .menu {
+        background-color: var(--section-bg-color);
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        width: 100%;
+        right: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        height: 0;
+        overflow: hidden;
+        transition: all 200ms ease-in;
     }
-    .nav__btn{
+    .menu-open{
+        height: 33rem;
+        overflow: visible;
+    }
+
+    .menu__item {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .menu__item:first-child {
+        margin-top: 2rem;
+
+    }
+
+    .nav__btn {
         display: flex;
     }
 }
