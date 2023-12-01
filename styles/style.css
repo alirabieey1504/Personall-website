@@ -196,6 +196,7 @@ ul {
     border-radius: 1.5rem;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .nav__btn-line {
@@ -212,16 +213,26 @@ ul {
     background-size: cover;
     background-position: center;
     background-color: var(--primery--color);
+    transition: all 200ms ease-in;
 }
 
 .nav__btn::before {
     position: absolute;
     top: 2.7rem;
     bottom: 0;
+    
+
 }
 
 .nav__btn::after {
     position: absolute;
     top: 4.3rem;
     bottom: 0;
+}
+.nav__btn--open .nav__btn::after{
+    transform: translateY(-.6rem) rotate(45deg);
+
+}
+.nav__btn--open .nav__btn::before{
+    transform: translateY(1rem) rotate(-45deg);
 }
