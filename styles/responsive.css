@@ -1,0 +1,24 @@
+
+
+@media (max-width:1200px) {}
+
+@media (max-width: 992px) {
+ 
+    .nav__text{
+        font-size: 4rem;
+    }
+    .menu__item{
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .menu{
+        display: none;
+    }
+    .nav__btn{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:576px) {}

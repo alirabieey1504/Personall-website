@@ -1,15 +1,15 @@
 @import url("./normalaze.css");
 @import url("./fonts.css");
 
-
 :root {
     --text-color: #333333;
-    --shadow-color: rgba(19, 182, 255, 24%);
+   
     --app-bg-color: #fff;
     --section-bg-color: #fff;
-    --f-Poppins-bold:"Poppins Bold";
-    --f-Poppins-Sebold:"Poppins SemiBold";
-    --f-Poppins-black:"Poppins Black";
+    --primery--color: #0abead;
+    --f-Poppins-bold: "Poppins Bold";
+    --f-Poppins-Sebold: "Poppins SemiBold";
+    --f-Poppins-black: "Poppins Black";
 }
 
 html {
@@ -117,19 +117,38 @@ body {
     flex: 0 0 auto;
 }
 
+/* 
+
+
+// reset style
+
+
+*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+
 
 /* 
 
 
-//  start project
+//  start project--header
 
 
 */
 
 
 .header {
-    box-shadow:2px 3px 10px 5px  var(--shadow-color);
-    
+    box-shadow: 0 0.5rem 4rem rgba(4,195,255,16%);
+
 }
 
 .nav {
@@ -139,7 +158,7 @@ body {
 }
 
 .nav__text {
-    color: rgb(47, 170, 170);
+    color:var(--primery--color);
     font-family: var(--f-Poppins-black);
     font-size: 5rem;
 }
@@ -147,9 +166,12 @@ body {
 .menu {
     list-style-type: none;
     display: flex;
-  
+    font-size: 1.3rem;
+    
 }
-
+.menu__item:first-child{
+     margin-left: 0;
+}
 .menu__item {
     margin-left: 4rem;
 }
@@ -157,14 +179,19 @@ body {
 .menu__link {
     text-decoration: none;
     color: var(--text-color);
+    font-family: "Poppins Medium";
 }
 
 .menu__link--active {
-    color: rgb(47, 170, 170);
+   color: var(--primery--color);
 }
 
 .nav__btn {
-    
+    display: none;
 }
 
 .nav__btn-line {}
+
+
+
+
