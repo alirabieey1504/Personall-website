@@ -203,36 +203,39 @@ ul {
     position: relative;
 }
 
-.nav__btn::before,
-.nav__btn::after,
+.nav__btn-line::before,
+.nav__btn-line::after,
 .nav__btn-line {
     content: " ";
     width: 3rem;
     height: .3rem;
     border-radius: 2rem;
-    background-size: cover;
+   
     background-position: center;
     background-color: var(--primery--color);
-    transition: all 200ms ease-in;
+    transition: all 150ms ease-in;
 }
 
-.nav__btn::before {
+.nav__btn-line::before {
     position: absolute;
-    top: 2.7rem;
+    top:-1rem;
     bottom: 0;
     
 
 }
 
-.nav__btn::after {
+.nav__btn-line::after {
     position: absolute;
-    top: 4.3rem;
+    top: 1rem;
     bottom: 0;
 }
-.nav__btn--open .nav__btn::after{
-    transform: translateY(-.6rem) rotate(45deg);
+.nav__btn--open .nav__btn-line::after{
+    transform: translateY(-1rem) rotate(45deg);
 
 }
-.nav__btn--open .nav__btn::before{
+.nav__btn--open .nav__btn-line::before{
     transform: translateY(1rem) rotate(-45deg);
+}
+.nav__btn--open .nav__btn-line{
+    background: transparent;
 }
