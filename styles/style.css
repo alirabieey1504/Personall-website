@@ -28,6 +28,7 @@ body {
     font-family: "Poppins";
     line-height: 2rem;
     font-size: 1.6rem;
+   overflow-x: hidden;
 }
 
 .container {
@@ -170,7 +171,7 @@ ul {
 .menu {
     list-style-type: none;
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1rem;
     z-index: 100;
 
 
@@ -255,15 +256,17 @@ ul {
 }
 
 .head {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+   
+    overflow: hidden;
+ 
+
 }
 
 .main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .main__left {
@@ -276,17 +279,18 @@ ul {
 }
 
 .main__left--text {
-   color: var(--primery--color);
-   font-family: var(--f-Poppins-Sebold);
-   
+    color: var(--primery--color);
+    font-family: var(--f-Poppins-Sebold);
+
 }
-.color-text{
+
+.color-text {
     color: orange;
 }
 
 .main__left--title {
-   color: var(--primery--color);
-   font-family: var(--f-Poppins-Sebold);
+    color: var(--primery--color);
+    font-family: var(--f-Poppins-Sebold);
 
 }
 
@@ -294,20 +298,22 @@ ul {
     color: rgb(176, 176, 176);
     font-size: .9rem;
 }
-.main__left--btn{
+
+.main__left--btn {
     display: flex;
     margin-top: 2rem;
 }
+
 .main__left--btnlt,
 .main__left--btnrt {
-    background-color:var(--primery--color);
-    color:var(--app-bg-color);
+    background-color: var(--primery--color);
+    color: var(--app-bg-color);
     outline: none;
     border: none;
-    padding: 1rem 3rem; 
+    padding: 1.5rem 4rem;
     border-radius: 1.5rem;
     font-size: 1rem;
-    
+
 }
 
 .main__left--btnrt {
@@ -317,13 +323,27 @@ ul {
 
 .main__right {
     margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__right--img {
     border-radius: 25rem;
     width: 30rem;
     height: 30rem;
+    object-fit: cover;
+
+
     border: 1rem solid var(--app-bg-color);
     box-shadow: 0 0.5rem 4rem rgba(4, 195, 255, 16%);
+
+}
+
+.head__shape {
+    position: absolute;
+    left: -4.5rem;
+    top: 40rem;
+    
 
 }
