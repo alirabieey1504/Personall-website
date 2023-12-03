@@ -254,4 +254,76 @@ ul {
     background: transparent;
 }
 
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 20rem;
+    line-height: .1rem;
+}
+
+.main__left--text {
+   color: var(--primery--color);
+   font-family: var(--f-Poppins-Sebold);
+   
+}
+.color-text{
+    color: orange;
+}
+
+.main__left--title {
+   color: var(--primery--color);
+   font-family: var(--f-Poppins-Sebold);
+
+}
+
+.main__left--discription {
+    color: rgb(176, 176, 176);
+    font-size: .9rem;
+}
+.main__left--btn{
+    display: flex;
+    margin-top: 2rem;
+}
+.main__left--btnlt,
+.main__left--btnrt {
+    background-color:var(--primery--color);
+    color:var(--app-bg-color);
+    outline: none;
+    border: none;
+    padding: 1rem 3rem; 
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    
+}
+
+.main__left--btnrt {
+    background-color: orange;
+    margin-left: 3rem;
+}
+
+.main__right {
+    margin-top: 15rem;
+}
+
+.main__right--img {
+    border-radius: 25rem;
+    width: 30rem;
+    height: 30rem;
+    border: 1rem solid var(--app-bg-color);
+    box-shadow: 0 0.5rem 4rem rgba(4, 195, 255, 16%);
+
+}

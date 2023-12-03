@@ -209,7 +209,7 @@
 
 @media (min-width: 1200px) {
     .container {
-        width: 1140px;
+        width: 900px;
     }
 
     .col-xl-1 {
@@ -278,7 +278,7 @@
 
 @media (min-width: 1400px) {
     .container {
-        width: 1370px;
+        width:1096px;
     }
 
     .col-xxl-1 {
